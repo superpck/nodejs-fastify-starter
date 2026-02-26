@@ -1,14 +1,14 @@
 # Node Fastify TypeScript Starter (JWT + Knex + MySQL/PostgreSQL)
 
-Starter project สำหรับ Node.js + Fastify + JWT + Knex + TypeScript และรองรับทั้ง MySQL/PostgreSQL
+Starter project for Node.js + Fastify + JWT + Knex + TypeScript, with support for both MySQL and PostgreSQL.
 
 ## Features
 
 - Fastify + TypeScript (ESM)
 - JWT Authentication (`@fastify/jwt`)
 - Database Query Builder (`knex`)
-- รองรับทั้ง MySQL (`mysql2`) และ PostgreSQL (`pg`)
-- Environment Config ผ่าน `.env`
+- Supports both MySQL (`mysql2`) and PostgreSQL (`pg`)
+- Environment configuration via `.env`
 
 ## 1) Setup
 
@@ -23,7 +23,7 @@ npm install
 npm run dev
 ```
 
-สำหรับ run แบบไม่ watch:
+To run without watch mode:
 
 ```bash
 npm run start
@@ -42,9 +42,9 @@ npm run seed
 - `GET /`
 - `GET /health`
 - `POST /api/auth/login`
-- `GET /api/auth/me` (ต้องส่ง `Authorization: Bearer <token>`)
+- `GET /api/auth/me` (requires `Authorization: Bearer <token>`)
 
-## ตัวอย่าง Login
+## Login Example
 
 ```json
 {
@@ -53,7 +53,7 @@ npm run seed
 }
 ```
 
-> ค่า user/password demo ปรับได้ในไฟล์ `.env`
+> You can change the demo user/password in `.env`.
 
 ## Credit
 
