@@ -16,3 +16,7 @@ and this project follows Semantic Versioning.
 - User controller and user routes.
 - Centralized protected route scope in `src/routes/index.ts`.
 - Project documentation updates and GitHub Copilot credit.
+
+### Changed
+- Removed Knex migration/rollback/seed workflow and related files.
+- Database schema is now managed manually by the project owner.

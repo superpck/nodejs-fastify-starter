@@ -29,15 +29,7 @@ To run without watch mode:
 npm run start
 ```
 
-## 3) Migration / Seed
-
-```bash
-npm run migrate
-npm run rollback
-npm run seed
-```
-
-## 4) API
+## 3) API
 
 Public routes:
 
@@ -66,6 +58,8 @@ Protected routes (require `Authorization: Bearer <token>`):
 
 - Auth is centralized in route registration scope at `src/routes/index.ts`.
 - `user` routes are protected via shared `preHandler` hook.
+- Knex migrations/seeds are removed; create and manage your schema manually.
+- The API expects a `users` table with at least: `id`, `email`, `name`, `created_at`, `updated_at`.
 
 ## Project Docs
 

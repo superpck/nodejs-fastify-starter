@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsx src/server.ts",
-    "dev": "tsx watch src/server.ts",
-    "migrate": "tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts --env development migrate:latest",
-    "rollback": "tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts --env development migrate:rollback",
-    "seed": "tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts --env development seed:run"
+    "dev": "tsx watch src/server.ts"
   },
   "keywords": [],
   "author": "",
