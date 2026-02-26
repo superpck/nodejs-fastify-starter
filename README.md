@@ -39,10 +39,17 @@ npm run seed
 
 ## 4) API
 
+Public routes:
+
 - `GET /`
 - `GET /health`
 - `POST /api/auth/login`
-- `GET /api/auth/me` (requires `Authorization: Bearer <token>`)
+
+Protected routes (require `Authorization: Bearer <token>`):
+
+- `GET /api/auth/me`
+- `GET /api/users`
+- `GET /api/users/me`
 
 ## Login Example
 
@@ -54,6 +61,16 @@ npm run seed
 ```
 
 > You can change the demo user/password in `.env`.
+
+## Notes
+
+- Auth is centralized in route registration scope at `src/routes/index.ts`.
+- `user` routes are protected via shared `preHandler` hook.
+
+## Project Docs
+
+- Changelog: `CHANGELOG.md`
+- License: `LICENSE`
 
 ## Credit
 

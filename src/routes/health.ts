@@ -9,7 +9,7 @@ const healthRoutes: FastifyPluginAsync = async (app) => {
     };
   });
 
-  app.get('/health', async () => {
+  app.get('/health', { preHandler: [app.auth] }, async () => {
     await app.db.raw('select 1 as ok');
 
     return {
